@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="card text-white bg-secondary mb-3" style="width: 25rem;" *ngIf="productdisplay">
+  <img class="card-img-top" [src]="product.imageUrl" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{product.productName}}</h5>
+    <div class="card-text ">
+       <ul class="list-group list-group-flush">
+      <li class="list-group-item text-white bg-secondary">{{product.price}}</li>
+      <p class="list-group-item text-white bg-secondary">{{product.productName}} built with latest {{product.ostype}} manufactured by {{product.manufacturer}}</p>
+      <h3>Rating <span class="badge bg-dark">{{product.rating}}</span></h3>
+    </ul>
+  </div>
+
+  <div class="col-xs-3">
+    <button type="button" class="btn btn-primary" (click)="edit()">edit</button><br>
+    <button type="button" class="btn btn-danger " (click)="delete()">delete</button>
+  </div>
+  <span class="text-danger" *ngIf="del">Delete Successfully</span>
+</div>
+</div>
+<div *ngIf="editpt">vahsgvcjasbfcuajfgyasgfbajfaytfuybgdjawfabdubjadtg</div>
+
+</div>

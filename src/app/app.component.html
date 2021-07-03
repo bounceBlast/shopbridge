@@ -1,0 +1,28 @@
+<div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]='["/Product"]' routerLinkActive="active">Navbar</a>
+      <a class="btn btn-secondary" (click)="addbutton()">Add product</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="panel-heading text-white" style="display:none;padding:0px;position:relative;top:4px;"
+              id="welcome">Welcome {{username | titlecase}}</div>
+          </li>
+          <li class="divider-vertical"></li>
+          <li> <button class="btn btn-secondary" id="login" type="submit" [routerLink]="['/login']"
+              routerLinkActive="active" (click)="login()">{{loginButton}}</button></li>
+        </ul>
+        <!-- </form> -->
+      </div>
+    </div>
+  </nav>
+  <div class="container-xxl router-div">
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
