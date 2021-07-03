@@ -18,5 +18,7 @@ take admin credentials as
 username : admin
 password : admin
 
+For any enquiry contact me at deepak08.cdm@gmail.com
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 >>>>>>> 6b44b31 (initial commit)
